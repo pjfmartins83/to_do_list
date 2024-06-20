@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>To Do List</title>
+    </head>
+    <body>
+        <header>
+            <h1><a ref="{% url 'home' %}">To Do List</a></h1>
+        </header>
+        <div>
+            {% block content %}
+            {% endblock content %}
+        </div>
+    </body>
+</html>
