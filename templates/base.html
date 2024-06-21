@@ -4,7 +4,12 @@
     </head>
     <body>
         <header>
-            <h1><a ref="{% url 'home' %}">To Do List</a></h1>
+            <div class="nav-left">
+                <h1><a ref="{% url 'home' %}">To Do List</a></h1>
+            </div>
+            <div class="nav-right">
+                <a href="{% url 'task_new' %}">+ New Task</a>
+            </div>
         </header>
         <div>
             {% block content %}
