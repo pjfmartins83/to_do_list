@@ -1,0 +1,7 @@
+{% block content %}
+<h1>Edit Task</h1> <a href="{% url 'home' %}">Back to the list</a>
+<form action="" method="task">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Update">
+</form>
+{% endblock content %}
